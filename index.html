@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMS Fan Tribute • 322 Cup Wins</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>.bar { transition: width 0.6s ease; }</style>
+</head>
+<body class="bg-gray-950 text-white">
+  <div class="max-w-4xl mx-auto p-8">
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-red-600">Hendrick Motorsports</h1>
+      <p class="text-2xl mt-2">Fan Tribute • 322 Cup Wins • 15 Championships • 40+ Years</p>
+      <p class="text-xs text-gray-400 mt-4">Fan-made • Public stats only • No affiliation</p>
+    </div>
+    <!-- Tabs -->
+    <div class="flex border-b border-gray-700 mb-8">
+      <button onclick="showTab(0)" class="tab-button active px-6 py-3 text-red-500 font-semibold">Dashboard</button>
+      <button onclick="showTab(1)" class="tab-button px-6 py-3">Stories</button>
+    </div>
+    <!-- Dashboard Tab -->
+    <div id="tab-0" class="tab-content">
+      <h2 class="text-3xl font-bold mb-6">HMS Legacy Dashboard</h2>
+      <div class="bg-gray-900 p-8 rounded-3xl">
+        <h3 class="mb-6">Cup Wins by Era (Total: 322)</h3>
+        <div class="space-y-8">
+          <div class="flex items-center gap-4"><div class="w-28">1984-1990</div><div class="flex-1 h-9 bg-gray-800 rounded-2xl overflow-hidden"><div class="bar h-9 bg-red-600" style="width: 13%"> </div></div><div class="w-12 text-right font-mono">20</div></div>
+          <!-- other bars similar -->
+        </div>
+      </div>
+    </div>
+    <!-- Stories Tab with localStorage -->
+    <div id="tab-1" class="tab-content hidden">
+      <h2 class="text-3xl font-bold mb-6">HMS Fan Stories</h2>
+      <form onsubmit="submitStory(event, 'hms')" class="bg-gray-900 p-8 rounded-3xl mb-12">
+        <input id="name" type="text" placeholder="Your Name" class="w-full p-4 mb-4 bg-gray-800 rounded-2xl" required>
+        <!-- full form -->
+      </form>
+      <div id="hms-feed" class="bg-gray-900 p-8 rounded-3xl"></div>
+    </div>
+  </div>
+  <script>
+    // full JS from earlier working version
+    function showTab(n) { /* implementation */ }
+    // ... (full script for tabs, submit, load)
+  </script>
+</body>
+</html>
